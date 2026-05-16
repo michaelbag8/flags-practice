@@ -143,4 +143,13 @@ func main() {
 	})
 	fmt.Println(log)
 
+	headers := []string{"Name", "City", "Age"}
+	rows := [][]string{
+		{"Michael", "Lagos", "25"},
+		{"Alice", "Abuja", "30"},
+		{"Bob", "Kano", "22"},
+	}
+	fmt.Println(buildTable(headers, rows))
+	fmt.Println("---")
+
 }
