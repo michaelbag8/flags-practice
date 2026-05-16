@@ -7,11 +7,11 @@ import (
 
 func repeat(word string, n int, sep string) string {
 	var result strings.Builder
-	
-	for i := 0; i < n; i++{
+
+	for i := 0; i < n; i++ {
 		result.WriteString(word)
-		if i < n-1{
-		result.WriteString(sep)
+		if i < n-1 {
+			result.WriteString(sep)
 		}
 	}
 
@@ -22,5 +22,5 @@ func repeat(word string, n int, sep string) string {
 func main() {
 	fmt.Println(repeat("Go", 3, " | "))
 	fmt.Println(repeat("Ha", 4, "!"))
-	fmt.Println(repeat("Yes", 1, "-") )
+	fmt.Println(repeat("Yes", 1, "-"))
 }
